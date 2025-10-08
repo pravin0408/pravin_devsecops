@@ -1,164 +1,189 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pravin Patil — DevSecOps Engineer</title>
-  <meta name="description" content="Portfolio of Pravin Patil — DevSecOps Engineer: SAST, SCA, CI/CD security, vulnerability management." />
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#94a3b8;
-      --accent:#6ee7b7;
-      --accent-2:#60a5fa;
-      --glass: rgba(255,255,255,0.04);
-      --radius:14px;
-      --maxw:1100px;
-      --ff: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:var(--ff);background:linear-gradient(180deg,var(--bg),#071026);color:#e6eef8}
-    a{color:var(--accent-2);text-decoration:none}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pravin Patil — DevSecOps Engineer</title>
+    <meta name="description" content="Portfolio of Pravin Patil — DevSecOps Engineer: SAST, SCA, CI/CD security, vulnerability management." />
+    <style>
+      :root{
+        --bg:#0f1724;
+        --card:#0b1220;
+        --muted:#94a3b8;
+        --accent:#6ee7b7;
+        --accent-2:#60a5fa;
+        --glass: rgba(255,255,255,0.04);
+        --radius:14px;
+        --maxw:1100px;
+        --ff: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%;margin:0;font-family:var(--ff);background:linear-gradient(180deg,var(--bg),#071026);color:#e6eef8}
+      a{color:var(--accent-2);text-decoration:none}
 
-    .container{max-width:var(--maxw);margin:36px auto;padding:28px}
-    header{display:flex;align-items:center;gap:18px;margin-bottom:20px}
-    .avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;border:3px solid var(--accent-2);flex-shrink:0}
-    .avatar img{width:100%;height:100%;object-fit:cover}
-    h1{margin:0;font-size:1.6rem}
-    .sub{color:var(--muted);margin-top:6px;font-size:0.95rem}
+      .container{max-width:var(--maxw);margin:36px auto;padding:28px}
+      header{display:flex;align-items:center;gap:18px;margin-bottom:20px}
+      .avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;border:3px solid var(--accent-2);flex-shrink:0}
+      .avatar img{width:100%;height:100%;object-fit:cover}
+      h1{margin:0;font-size:1.6rem}
+      .sub{color:var(--muted);margin-top:6px;font-size:0.95rem}
 
-    .grid{display:grid;grid-template-columns: 1fr 340px;gap:20px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+      .grid{display:grid;grid-template-columns: 1fr 340px;gap:20px}
+      @media (max-width:900px){.grid{grid-template-columns:1fr}}
 
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:var(--radius);padding:20px;box-shadow:0 6px 20px rgba(3,7,18,0.6);border:1px solid rgba(255,255,255,0.04);margin-bottom:16px}
+      .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:var(--radius);padding:20px;box-shadow:0 6px 20px rgba(3,7,18,0.6);border:1px solid rgba(255,255,255,0.04);margin-bottom:16px}
 
-    .section{margin-bottom:18px}
-    .section h2{margin:0 0 10px 0;font-size:1.05rem}
-    p{color:#d7e6f8;line-height:1.5;margin:0}
+      .section{margin-bottom:18px}
+      .section h2{margin:0 0 10px 0;font-size:1.05rem}
+      p{color:#d7e6f8;line-height:1.5;margin:0}
 
-    .chips{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:0.85rem;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+      .chips{display:flex;flex-wrap:wrap;gap:8px}
+      .chip{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:0.85rem;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
 
-    .exp{display:flex;flex-direction:column;gap:12px}
-    .job{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border:1px solid rgba(255,255,255,0.02)}
-    .job h3{margin:0;font-size:0.98rem}
-    .job .meta{color:var(--muted);font-size:0.88rem;margin-top:6px}
-    .job p{margin-top:8px;color:#cfe9ff;font-size:0.95rem}
+      .exp{display:flex;flex-direction:column;gap:12px}
+      .job{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border:1px solid rgba(255,255,255,0.02)}
+      .job h3{margin:0;font-size:0.98rem}
+      .job .meta{color:var(--muted);font-size:0.88rem;margin-top:6px}
+      .job p{margin-top:8px;color:#cfe9ff;font-size:0.95rem}
+      
+      /New style for bullet points */
+      .job ul {
+          margin: 8px 0 0 15px;
+          padding: 0;
+          list-style: disc;
+          color: #cfe9ff;
+          font-size: 0.95rem;
+      }
+      .job li {
+          margin-bottom: 6px;
+      }
 
-    aside .card{position:relative;top:28px;margin-bottom:20px}
-    .contact{display:inline-flex;flex-direction:column;gap:10px;}
-    .contact a{display:inline-flex;align-items:center;gap:8px;padding:8px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+      aside .card{position:relative;top:28px;margin-bottom:20px}
+      .contact{display:inline-flex;flex-direction:column;gap:10px;}
+      .contact a{display:inline-flex;align-items:center;gap:8px;padding:8px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
 
-    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-    @media (max-width:700px){.projects{grid-template-columns:1fr}}
-    .proj{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
-    .proj h4{margin:0 0 6px 0}
+      .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+      @media (max-width:700px){.projects{grid-template-columns:1fr}}
+      .proj{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
+      .proj h4{margin:0 0 6px 0}
 
-    footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center}
-  </style>
+      footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center}
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="avatar">
-        <img src="profile.jpg" alt="Pravin Patil" />
+    <div class="container">
+      <header>
+        <div class="avatar">
+          <img src="profile.jpg" alt="Pravin Patil" />
+        </div>
+        <div>
+          <h1>Pravin Patil</h1>
+          <div class="sub">Proactive DevSecOps Engineer*• Cloud Security · Vulnerability & Compliance Management</div>
+          <div class="muted" style="margin-top:8px">Pune, India • pravinpatil3096@gmail.com • 7276107563</div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="card section">
+            <h2>Professional Summary</h2>
+            <p>
+              Results-driven DevSecOps Engineer with 4+ years of specialized experience in fortifying application security across the SDLC. Expertise includes configuring and tuning SAST (Checkmarx/SonarQube) and SCA (Snyk), and comprehensive Vulnerability Management utilizing Tenable.io and BitSight to ensure continuous security compliance. Proven track record in automating security gate deployments, drastically reducing false positives, and leveraging Python/Shell for efficient security operations.
+            </p>
+          </section>
+
+          <section class="card section">
+            <h2>Core Competencies</h2>
+            <div class="chips" style="margin-top:8px">
+              <div class="chip">Vulnerability Management (Tenable/BitSight)</div>
+              <div class="chip">SAST (Checkmarx, SonarQube)</div>
+              <div class="chip">SCA (OWASP Dep-Check, Snyk)</div>
+              <div class="chip">CI/CD Pipeline Security</div>
+              <div class="chip">Security Compliance & Audits</div>
+              <div class="chip">Python / Bash Automation</div>
+              <div class="chip">Jira · GitLab · Jenkins</div>
+              <div class="chip">Cloud Security Principles</div>
+            </div>
+          </section>
+
+          <section class="card section">
+            <h2>Experience</h2>
+            <div class="exp" style="margin-top:8px">
+              <div class="job">
+                <h3>Associate Professional – DevSecOps, Ingram Micro SSC Pvt Ltd</h3>
+                <div class="meta">Sep 2021 — Present</div>
+                <ul>
+                  <li>Vulnerability & Compliance Management:Led the administration and reporting for Tenable.io/Nessus and BitSight platforms, resulting in a 15% reduction*in high-risk vulnerabilities across the corporate estate within six months.</li>
+                  <li>SAST/SCA Automation:Engineered and maintained security gates using Checkmarx and Snyk within GitLab CI/CD pipelines, ensuring all code met security baselines before deployment.</li>
+                  <li>False Positive Reduction:Conducted deep-dive false positive analysis for SAST results, creating and tuning custom queries/rulesets that improved developer signal-to-noise ratio by 25%.</li>
+                  <li>Reporting & Triage:Developed Python scripts to parse security scan results, automatically triage findings into Jira tickets, and generate executive compliance reports, saving an estimated 8 hours per week in manual effort.</li>
+                  <li>Threat Modeling:Actively participated in threat modeling for new application features to identify design-level risks, implementing preventative security controls early in the SDLC.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="card section">
+            <h2>Selected Projects</h2>
+            <div class="projects" style="margin-top:8px">
+              <div class="proj">
+                <h4>Employee Management System (Android)</h4>
+                <div class="muted">Secure authentication · SQLite encryption · RBAC</div>
+              </div>
+              <div class="proj">
+                <h4>Image Steganography (Java)</h4>
+                <div class="muted">LSB algorithm for secure data embedding</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card section">
+            <h2>Education & Awards</h2>
+            <p class="muted" style="margin-bottom:8px">B.E. Computer Science — Dr. Babasaheb Ambedkar Marathwada University</p>
+            <div class="chips">
+              <div class="chip">Spotlight Award — Jul 2024</div>
+              <div class="chip">Cheer to Peer — Oct 2022</div>
+            </div>
+          </section>
+        </main>
+
+        <aside>
+          <div class="card">
+            <h2>Contact</h2>
+            <div class="contact" style="margin-top:10px">
+              <a href="mailto:pravinpatil3096@gmail.com">📧 pravinpatil3096@gmail.com</a>
+              <a href="tel:+917276107563">📞 +91 72761 07563</a>
+              <a href="https://www.linkedin.com/in/pravin-pp/" target="_blank">🔗 LinkedIn Profile</a>
+              <div class="muted" style="padding:8px;border-radius:8px;background:rgba(255,255,255,0.01);">Pune, India</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Skills & Tools</h2>
+            <div style="margin-top:8px" class="chips">
+              <div class="chip">Tenable.io (Vulnerability Mgmt)</div>
+              <div class="chip">BitSight (Security Rating)</div>
+              <div class="chip">Checkmarx (SAST)</div>
+              <div class="chip">SonarQube</div>
+              <div class="chip">Snyk (SCA)</div>
+              <div class="chip">Jenkins / GitLab CI</div>
+              <div class="chip">OWASP Top 10</div>
+              <div class="chip">Python / Shell</div>
+              <div class="chip">Burp Suite / DAST</div>
+              <div class="chip">Cloud Principles (AWS/Azure)</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Languages</h2>
+            <p class="muted">Marathi (Native) · Hindi (Full Professional) · English (Full Professional)</p>
+          </div>
+        </aside>
       </div>
-      <div>
-        <h1>Pravin Patil</h1>
-        <div class="sub">DevSecOps Engineer • SAST · SCA · CI/CD Security · Vulnerability Management</div>
-        <div class="muted" style="margin-top:8px">Pune, India • pravinpatil3096@gmail.com • 7276107563</div>
-      </div>
-    </header>
 
-    <div class="grid">
-      <main>
-        <section class="card section">
-          <h2>Professional Summary</h2>
-          <p>DevSecOps Engineer with 4+ years of experience in application security, SAST (Checkmarx, SonarQube), SCA, and CI/CD security integration. Experienced in vulnerability management, false-positive analysis, and automating security workflows using Python and shell scripting.</p>
-        </section>
-
-        <section class="card section">
-          <h2>Core Competencies</h2>
-          <div class="chips" style="margin-top:8px">
-            <div class="chip">SAST (Checkmarx)</div>
-            <div class="chip">SCA (OWASP Dep-Check, Snyk)</div>
-            <div class="chip">CI/CD Security</div>
-            <div class="chip">Vulnerability Management</div>
-            <div class="chip">Threat Modeling</div>
-            <div class="chip">Python / Bash / PowerShell</div>
-            <div class="chip">Jira · GitLab · Jenkins</div>
-          </div>
-        </section>
-
-        <section class="card section">
-          <h2>Experience</h2>
-          <div class="exp" style="margin-top:8px">
-            <div class="job">
-              <h3>Associate Professional – DevSecOps, Ingram Micro SSC Pvt Ltd</h3>
-              <div class="meta">Sep 2021 — Present</div>
-              <p>Designed and enforced secure DevSecOps frameworks, integrated SAST and SCA into CI/CD pipelines with gating policies, performed false positive triage, and developed Python scripts to automate vulnerability reporting and compliance tracking.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="card section">
-          <h2>Selected Projects</h2>
-          <div class="projects" style="margin-top:8px">
-            <div class="proj">
-              <h4>Employee Management System (Android)</h4>
-              <div class="muted">Secure authentication · SQLite encryption · RBAC</div>
-            </div>
-            <div class="proj">
-              <h4>Image Steganography (Java)</h4>
-              <div class="muted">LSB algorithm for secure data embedding</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="card section">
-          <h2>Education & Awards</h2>
-          <p class="muted" style="margin-bottom:8px">B.E. Computer Science — Dr. Babasaheb Ambedkar Marathwada University</p>
-          <div class="chips">
-            <div class="chip">Spotlight Award — Jul 2024</div>
-            <div class="chip">Cheer to Peer — Oct 2022</div>
-          </div>
-        </section>
-      </main>
-
-      <aside>
-        <div class="card">
-          <h2>Contact</h2>
-          <div class="contact" style="margin-top:10px">
-            <a href="mailto:pravinpatil3096@gmail.com">📧 pravinpatil3096@gmail.com</a>
-            <a href="tel:+917276107563">📞 +91 72761 07563</a>
-            <a href="https://www.linkedin.com/in/pravin-pp/" target="_blank">🔗 LinkedIn Profile</a>
-            <div class="muted" style="padding:8px;border-radius:8px;background:rgba(255,255,255,0.01);">Pune, India</div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Skills & Tools</h2>
-          <div style="margin-top:8px" class="chips">
-            <div class="chip">Checkmarx</div>
-            <div class="chip">SonarQube</div>
-            <div class="chip">Snyk</div>
-            <div class="chip">Jenkins</div>
-            <div class="chip">GitHub Actions</div>
-            <div class="chip">Burp Suite</div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Languages</h2>
-          <p class="muted">Marathi (Native) · Hindi (Full Professional) · English (Full Professional)</p>
-        </div>
-      </aside>
+      <footer>
+        <div class="muted">© Pravin Patil — DevSecOps Engineer</div>
+      </footer>
     </div>
-
-    <footer>
-      <div class="muted">© Pravin Patil — DevSecOps Engineer</div>
-    </footer>
-  </div>
 </body>
 </html>
